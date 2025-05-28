@@ -1,0 +1,44 @@
+body 
+{
+ display:flex; /*define o tamanho inicial que um item deve ter*/
+ flex-direction: column;
+ align-items: center;
+ background-color:burlywood;
+ font-family: inherit;
+}
+
+#tabuleiro 
+{
+ display:grid;/* define o número e a largura das colunas*/
+ grid-template-columns: repeat(8, 60px);
+ grid-template-rows: repeat(8, 60px);
+ border:2px solid #333;
+ margin-top: 20px;
+}
+
+.square
+{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor:pointer;
+}
+
+.white
+{
+    background-color: #eee;
+}
+
+.black
+{
+    background-color: #666;
+    color:white;
+}
+
+.selected/*uma parte de uma página que é selecionada pelo usuário usando o mouse ou qualquer outro dispositivo apontador.*/
+{
+ outline:3px solid red;
+}
